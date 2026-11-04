@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Designer Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+   <!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    primary: '#1E40AF', // Royal Blue - Profesional & Dapat diandalkan
+                    primaryDark: '#1E3A8A', // Navy Blue - Untuk efek hover
+                    accent: '#F59E0B', // Warm Yellow - Ramah, santai, & kolaboratif
+                    accentDark: '#D97706', // Darker Yellow - Untuk hover tombol
+                    bgLight: '#F8FAFC', // Slate 50 - Latar belakang bersih
+                }
+            }
+        }
+    }
+</script>
+</head>
+<body class="bg-bgLight text-gray-800 font-sans antialiased">
+
+    <!-- 1. Navbar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-900 tracking-wide">
+                Portofolio<span class="text-primary">Aditiya</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-primary transition-colors font-medium">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-primary transition-colors font-medium">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-primary transition-colors font-medium">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition-colors font-medium">Contact</a>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-gray-600 hover:text-primary focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+ <!-- 2. Hero Section -->
+<section id="about" class="relative pt-32 pb-20 px-6 max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 overflow-hidden">
+    
+    <!-- Ornamen Ikon UI/UX (Latar Belakang) -->
+    <!-- 1. Ikon Cursor/Pointer (Kiri Atas) -->
+    <div class="absolute top-24 left-10 md:left-16 text-primary opacity-20 animate-bounce pointer-events-none z-0">
+        <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 13l6 6"></path>
+        </svg>
+    </div>
+    
+    <!-- 2. Ikon Layout/Wireframe (Kanan Atas) -->
+    <div class="absolute top-32 right-10 md:right-24 text-gray-400 opacity-20 pointer-events-none z-0">
+        <svg width="56" height="56" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 9h18M9 21V9"></path>
+        </svg>
+    </div>
+
+    <!-- 3. Ikon Pen Tool/Vector (Kiri Bawah) -->
+    <div class="absolute bottom-20 left-1/4 text-accent opacity-20 animate-pulse pointer-events-none z-0">
+        <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+    </div>
+
+    <!-- 4. Ikon Pengguna/UX Persona (Kanan Bawah) -->
+    <div class="absolute bottom-10 right-20 md:right-32 text-primary opacity-20 animate-pulse pointer-events-none z-0" style="animation-delay: 1s;">
+        <svg width="52" height="52" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path>
+        </svg>
+    </div>
+
+    <!-- 5. Ikon Kode/HTML (Tengah Kiri) -->
+    <div class="absolute top-1/2 left-4 md:left-8 text-accent opacity-20 animate-bounce pointer-events-none z-0" style="animation-duration: 3s;">
+        <svg width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+        </svg>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="w-full md:w-3/5 text-center md:text-left relative z-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
+            Halo I'm Aditiya Pradana
+            <span class="text-primary text-4xl md:text-5xl block mt-2">Junior UI/UX Designer</span>
+        </h1>
+        <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+            Saya adalah Junior UI/UX Designer yang berfokus menciptakan antarmuka digital yang estetis, intuitif, dan berpusat pada kenyamanan pengguna. Dengan pengalaman menerjemahkan masalah kompleks menjadi solusi desain yang fungsional, saya terbiasa bekerja secara kolaboratif dan selalu terbuka terhadap masukan. Saya memiliki semangat belajar yang tinggi, adaptif, dan berkomitmen penuh untuk memberikan kontribusi nyata dalam merancang produk digital yang sukses bagi perusahaan Anda.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#projects" class="bg-primary hover:bg-primaryDark text-white px-8 py-3 rounded-full font-medium transition-colors shadow-lg shadow-blue-200">
+                View Projects
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aditiyapradana85@gmail.com" target="_blank" rel="noopener noreferrer" class="bg-white border border-gray-300 hover:border-gray-400 text-gray-700 px-8 py-3 rounded-full font-medium transition-colors">
+                Contact Me
+            </a>
+        </div>
+    </div>
+    
+    <div class="w-full md:w-2/5 flex justify-center relative z-10">
+        <!-- Foto Profil -->
+        <img src="Image/Foto Profile.jpeg" alt="Profile Picture" class="w-80 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-xl relative z-10">
+    </div>
+</section>
+
+    <!-- 3. Skills & Tools Section -->
+    <section id="skills" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-10">Tools & Skills</h2>
+            
+            <div class="mb-12">
+                <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-6">Software & Tools</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <!-- Tombol alat yang bisa diklik ke websitenya -->
+                    <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 transition flex items-center gap-2">
+                        <i class="fa-brands fa-figma text-pink-500"></i> Figma
+                    </a>
+                    <a href="https://miro.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 transition flex items-center gap-2">
+                        <i class="fa-solid fa-pen-nib text-yellow-500"></i> Miro
+                    </a>
+                    <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 transition flex items-center gap-2">
+                        <i class="fa-brands fa-unsplash text-black"></i> Unsplash
+                    </a>
+                    <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 transition flex items-center gap-2">
+                        <i class="fa-brands fa-dribbble text-pink-600"></i> Dribbble
+                    </a>
+                   <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 transition flex items-center gap-2">
+    <div class="w-5 h-5 bg-[#470137] text-[#FF61F6] font-bold text-[11px] flex items-center justify-center rounded-[4px]">Xd</div>
+    Adobe XD
+</a>
+                    <a href="https://www.notion.so" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 transition flex items-center gap-2">
+                        <i class="fa-solid fa-book text-slate-800"></i> Notion
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-6">Design Skills</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-sm">User Research</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-sm">Information Architecture</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-sm">User Flow & Wireframing</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-sm">Usability Testing</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-sm">Design Systems</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-sm">Typography</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-sm">Prototyping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-bgLight">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A selection of my recent works demonstrating user-centered design solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="Image/Food4LL.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-primary text-sm font-semibold tracking-wider uppercase mb-2">Social Commerce Food App</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Food Delivery and Food Donation App</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">
+                            Aplikasi yang mengintegrasikan layanan pemesanan makanan murah dengan donasi makanan. Platform ini memungkinkan pengguna memesan makanan sekaligus mendonasikan makanan secara praktis kepada pihak yang membutuhkan.
+                        </p>
+                        <a href="Food4LL.html" class="inline-flex items-center text-primary font-medium hover:text-primaryDark transition-colors">
+                            Read My Case Study <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="Image/Tutors app.png" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-primary text-sm font-semibold tracking-wider uppercase mb-2">EdTech Mobile App</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Online Learning Platform</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">
+                          Aplikasi mobile yang intuitif untuk meningkatkan pengalaman belajar jarak jauh. Dilengkapi fitur kelas online, pemberian tugas, penjadwalan pembelajaran dan modul pembelajaran interaktif yang dirancang khusus untuk calon pengguna.
+                          </p>
+                        <a href="Tutors.html" class="inline-flex items-center text-primary font-medium hover:text-primaryDark transition-colors">
+                            Read My Case Study <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact / Footer Section -->
+    <footer id="contact" class="bg-white py-20 px-6 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Thank You!</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-xl mx-auto">
+                 Punya ide menarik dan ingin mendiskusikannya?<br>
+                  Mari berkolaborasi untuk mewujudkan sesuatu yang luar biasa
+            </p>
+            
+            <!-- CTA Button -->
+            <a href="" class="inline-block bg-primary hover:bg-primaryDark text-white px-10 py-4 rounded-full font-medium text-lg transition-colors shadow-lg shadow-blue-200 mb-12">
+                Get in touch with me
+            </a>
+
+          <!-- Social Links -->
+          <div class="flex justify-center gap-6 mb-12">
+                <!-- 1. Email: Ganti "emailanda@contoh.c" dengan alamat email asli Anda -->
+                <a href="mailto:aditiyapradana85" class="w-12 h-12 bg-gray-50 border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-blue-600 hover:border-blue-600 hover:bg-white transition-all" aria-label="Email">
+                    <i class="fa-regular fa-envelope text-xl"></i>
+                </a>
+                
+                <!-- 2. LinkedIn: Ganti URL di dalam href dengan link profil LinkedIn Anda -->
+                <a href="https://www.linkedin.com/in/aditiya-pradana/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gray-50 border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-[#0A66C2] hover:border-[#0A66C2] hover:bg-white transition-all" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+                
+                <!-- 3. Instagram: Ganti URL di dalam href dengan link profil Instagram Anda -->
+                <a href="https://www.instagram.com/pradanaaditiya55/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gray-50 border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-[#E4405F] hover:border-[#E4405F] hover:bg-white transition-all" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                </a>
+            </div>
+            
+            <div class="text-sm text-gray-400">
+                <p>&copy; 2026 UI/UX Designer Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
